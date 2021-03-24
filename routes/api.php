@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('register', [\App\Http\Controllers\RegisterController::class, 'register']);
+Route::post('list-recipes', [\App\Http\Controllers\RecipesController::class, 'list']);
 
 Route::group([
 
